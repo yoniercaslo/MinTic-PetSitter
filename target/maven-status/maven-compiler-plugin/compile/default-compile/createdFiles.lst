@@ -1,0 +1,9 @@
+beans\Mascota.class
+beans\Usuario.class
+controller\UsuarioController.class
+controller\IUsuarioController.class
+servlets\PruebaServlet.class
+beans\Cuidado.class
+test\OperacionesBD.class
+servlets\ServletUsuarioLogin.class
+connection\DBConnection.class
