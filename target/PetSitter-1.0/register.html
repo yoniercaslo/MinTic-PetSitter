@@ -16,11 +16,11 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="js/index.js"></script>
         <link href="css/index.css" rel="stylesheet">
-        <title>Registro - Renta de peliculas</title>
+        <title>Registro - Pet Sitter</title>
     </head>
     <body>
         <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Crear cuenta - Renta de peliculas</a>
+            <a class="navbar-brand" href="index.html">Crear cuenta - Pet Sitter</a>
         </nav>
         <main class="p-4 d-flex justify-content-center">
             <div class="card sizeDiv">
@@ -41,27 +41,41 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="input-nombre">Nombre</label>
+                            <label for="input-nombre">Nombre Mascota</label>
                             <input type="text" class="form-control" id="input-nombre" placeholder="Nombre" required>
                         </div>
                         <div class="form-group">
-                            <label for="input-apellidos">Apellidos</label>
-                            <input type="text" class="form-control" id="input-apellidos" placeholder="Apellidos" required>
+                            <label for="input-tipoMascota">Tipo Mascota</label>
+                            <input type="text" class="form-control" id="input-tipoMascota" placeholder="Tipo Mascota" required>
                         </div>
                         <div class="form-group">
-                            <label for="input-email">Email</label>
-                            <input type="text" class="form-control" id="input-email" placeholder="Email" required>
+                            <label for="input-raza">Raza</label>
+                            <input type="text" class="form-control" id="input-raza" placeholder="Raza" required>
                         </div>
                         <div class="form-group">
-                            <label for="input-saldo">Saldo</label>
-                            <input type="number" class="form-control" id="input-saldo" placeholder="0" min="0" max="10000" value="0" required>
+                            <label for="input-tamano">Tamaño</label>
+                            <input type="text" class="form-control" id="input-tamano" placeholder="Tamaño" required>
                         </div>
+                        <div class="form-group">
+                            <label for="input-color">Color</label>
+                            <input type="text" class="form-control" id="input-color" placeholder="Color" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="input-edad">Edad</label>
+                            <input type="text" class="form-control" id="input-edad" placeholder="Edad" required>
+                        </div><!-- comment -->
+                        <div class="form-group">
+                            <label for="input-sexoMascota">Sexo Mascota</label>
+                            <input type="text" class="form-control" id="input-sexoMascota" placeholder="Sexo Mascota" required>
+                        </div>
+                        
                         <div class="form-group">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="input-premium">
-                                <label class="form-check-label" for="input-premium">Premium</label>
+                                <input type="checkbox" class="form-check-input" id="input-estado">
+                                <label class="form-check-label" for="input-estado">Activo</label>
                             </div>
                         </div>
+
                         <input type="submit" class="btn btn-primary" id="register-btn" value="Registrar usuario" />
                     </form>
                     <div id="register-error" class="alert alert-danger d-none" role="alert"></div>

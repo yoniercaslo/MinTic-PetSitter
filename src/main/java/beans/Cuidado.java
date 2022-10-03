@@ -2,30 +2,34 @@ package beans;
 import java.sql.Date;
 public class Cuidado {
     
-    private String idCuidado;
-    private String idUsuario;
+    private int id;
+    private String username;
     private Date fecha;
+    private boolean novedad;
+    private String ciudad;
 
-    public Cuidado(String idCuidado, String idUsuario, Date fecha) {
-        this.idCuidado = idCuidado;
-        this.idUsuario = idUsuario;
+    public Cuidado(int id, String username, Date fecha, boolean novedad, String ciudad) {
+        this.id = id;
+        this.username = username;
         this.fecha = fecha;
+        this.novedad = novedad;
+        this.ciudad = ciudad;
     }
 
-    public String getIdCuidado() {
-        return idCuidado;
+    public int getId() {
+        return id;
     }
 
-    public void setIdCuidado(String idCuidado) {
-        this.idCuidado = idCuidado;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getIdUsuario() {
-        return idUsuario;
+    public String getUsername() {
+        return username;
     }
 
-    public void setIdUsuario(String idUsuario) {
-        this.idUsuario = idUsuario;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public Date getFecha() {
@@ -36,11 +40,26 @@ public class Cuidado {
         this.fecha = fecha;
     }
 
+    public boolean isNovedad() {
+        return novedad;
+    }
+
+    public void setNovedad(boolean novedad) {
+        this.novedad = novedad;
+    }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+
     @Override
     public String toString() {
-        return "cuidado{" + "idCuidado=" + idCuidado + ", idUsuario=" + idUsuario + ", fecha=" + fecha + '}';
+        return "Cuidado{" + "id=" + id + ", username=" + username + ", fecha=" + fecha + ", novedad=" + novedad + ", ciudad=" + ciudad + '}';
     }
-    
-    
-  
+
+            
 }

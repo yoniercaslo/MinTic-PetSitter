@@ -1,8 +1,9 @@
 package beans;
 
 public class Mascota {
-    
-    private String idMascota;
+
+    private String username;
+    private String contrasena;
     private String nombre;
     private String tipoMascota;
     private String raza;
@@ -10,11 +11,11 @@ public class Mascota {
     private String color;
     private String edad;
     private String sexoMascota;
-    private String cedulaUsuario;
     private boolean estado;
 
-    public Mascota(String idMascota, String nombre, String tipoMascota, String raza, String tamano, String color, String edad, String sexoMascota, String cedulaUsuario, boolean estado) {
-        this.idMascota = idMascota;
+    public Mascota(String username, String contrasena, String nombre, String tipoMascota, String raza, String tamano, String color, String edad, String sexoMascota, boolean estado) {
+        this.username = username;
+        this.contrasena = contrasena;
         this.nombre = nombre;
         this.tipoMascota = tipoMascota;
         this.raza = raza;
@@ -22,16 +23,23 @@ public class Mascota {
         this.color = color;
         this.edad = edad;
         this.sexoMascota = sexoMascota;
-        this.cedulaUsuario = cedulaUsuario;
         this.estado = estado;
     }
 
-    public String getIdMascota() {
-        return idMascota;
+    public String getUsername() {
+        return username;
     }
 
-    public void setIdMascota(String idMascota) {
-        this.idMascota = idMascota;
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
     }
 
     public String getNombre() {
@@ -90,14 +98,6 @@ public class Mascota {
         this.sexoMascota = sexoMascota;
     }
 
-    public String getCedulaUsuario() {
-        return cedulaUsuario;
-    }
-
-    public void setCedulaUsuario(String cedulaUsuario) {
-        this.cedulaUsuario = cedulaUsuario;
-    }
-
     public boolean isEstado() {
         return estado;
     }
@@ -108,9 +108,7 @@ public class Mascota {
 
     @Override
     public String toString() {
-        return "mascota{" + "idMascota=" + idMascota + ", nombre=" + nombre + ", tipoMascota=" + tipoMascota + ", raza=" + raza + ", tamano=" + tamano + ", color=" + color + ", edad=" + edad + ", sexoMascota=" + sexoMascota + ", cedulaUsuario=" + cedulaUsuario + ", estado=" + estado + '}';
+        return "Mascota{" + "username=" + username + ", contrasena=" + contrasena + ", nombre=" + nombre + ", tipoMascota=" + tipoMascota + ", raza=" + raza + ", tamano=" + tamano + ", color=" + color + ", edad=" + edad + ", sexoMascota=" + sexoMascota + ", estado=" + estado + '}';
     }
-    
-    
-    
+
 }
